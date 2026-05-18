@@ -1,0 +1,30 @@
+---
+title: ""
+format:
+  html:
+    page-layout: custom
+    theme: cosmo
+    css: styles.css
+---
+
+::: {.container-fluid .px-0}
+
+::: {.hero-section}
+
+::: {.hero-media}
+![](images/2025-04-02_praxis-weller_0536-542d8a50.webp){.hero-image}
+:::
+
+::: {.hero-content}
+::: {.hero-text}
+# Die hausärztliche Praxis am Findorffmarkt heißt Sie herzlich willkommen!
+
+Als gut erreichbare Praxis im Herzen von Bremen sind wir für Sie da. Um die bestmögliche Versorgung zu gewährleisten, wird eine Terminsprechstunde geführt. Für akute Anliegen gibt es tägliche Akut- und Infektsprechstundenzeiten als offene Sprechstunde (ohne Termin). Bitte finden Sie sich 10 min vor Ihrem Termin in unserer Praxis ein. Termine erhalten Sie telefonisch oder einfach per Online-Terminbuchung. Bitte beachten Sie, dass wir Patientinnnen, welche sich bereits in hausärztlicher Versorgung in Bremen befinden, nur vertretungsweise behandeln können.
+
+[Mehr erfahren](#){.btn .btn-primary .mt-3}
+:::
+:::
+
+:::
+
+:::

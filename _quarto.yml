@@ -1,0 +1,36 @@
+project:
+  type: website
+
+website:
+  title: "Praxis am Findorffmarkt"
+  favicon: images/favicon.png
+  navbar:
+    title: false
+    logo: images/logo.svg
+    logo-alt: "Praxis am Findorffmarkt"
+    left:
+      - href: index.qmd
+        text: Home
+      - href: praxis.qmd
+        text: Die Praxis
+      - href: leistungen.qmd
+        text: Unsere Leistungen
+      - href: team.qmd
+        text: Unser Praxis-Team  
+      - href: lage.qmd
+        text: Lage
+      - href: kontakt.qmd
+        text: Kontakt
+
+
+
+
+lang: de
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true

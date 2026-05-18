@@ -1,0 +1,14 @@
+---
+title: "Lage"
+---
+
+
+```{r}
+#| column: screen
+#| echo: false
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat=53.09233499793547, lng=8.811223030689192, popup="Die Praxis am Findorffmarkt")
+```
+
