@@ -1,0 +1,126 @@
+/* css styles */
+
+/* Navbar-Logo:
+   Hier steuerst du, wie groß das Praxis-Logo oben in der Quarto-Navigation
+   angezeigt wird. */
+.navbar-logo {
+  height: 2.5rem;
+  max-height: 2.5rem;
+  width: auto;
+  object-fit: contain;
+  padding-right: 0;
+}
+
+.navbar-brand-logo {
+  margin-right: 1.25rem;
+}
+
+/* Hero-Layout der Startseite:
+   Hier steuerst du die Gesamtfläche, die zwei Spalten, die Innenabstände
+   und den Abstand zwischen Bild und Text. */
+.hero-section {
+  min-height: 62vh;
+  padding: clamp(1.25rem, 3vw, 3rem) clamp(1rem, 4vw, 3.5rem);
+  display: grid;
+  grid-template-columns: minmax(300px, 6fr) minmax(0, 6fr);
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 3rem);
+}
+
+/* Hero-Spalten:
+   Diese Werte verhindern, dass Bild oder Text die Grid-Spalten sprengen. */
+.hero-media,
+.hero-content {
+  min-width: 0;
+  width: 100%;
+}
+
+/* Hero-Bild:
+   Hier kannst du die Bildgröße ändern. Der mittlere Wert reagiert auf die
+   Bildschirmbreite, der letzte Wert ist die maximale Größe auf Desktop. */
+.hero-image {
+  width: clamp(260px, 38vw, 600px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin-inline: auto;
+}
+
+/* Textblock im Hero:
+   max-width bestimmt die Lesebreite, padding den Innenabstand im Textbereich. */
+.hero-text {
+  width: 100%;
+  max-width: 700px;
+  padding: clamp(1rem, 2.5vw, 2rem) clamp(0.75rem, 2.5vw, 2rem);
+}
+
+/* Hero-Überschrift:
+   Hier stellst du die Größe, Zeilenhöhe, Schriftstärke und Farbe ein. */
+.hero-text h1 {
+  font-size: clamp(2.2rem, 4.6vw, 4.1rem);
+  line-height: 1.1;
+  font-weight: 500;
+  color: #3e638b;
+}
+
+/* Hero-Fließtext:
+   Hier steuerst du die Textgröße und den Zeilenabstand unter der Überschrift. */
+.hero-text p {
+  font-size: clamp(1rem, 1.4vw, 1.25rem);
+  line-height: 1.7;
+}
+
+/* Tablet und kleinere Bildschirme:
+   Ab hier wird aus den zwei Spalten eine einzelne Spalte. */
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: auto;
+    text-align: center;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text {
+    margin-inline: auto;
+  }
+}
+
+/* Smartphone-Feinschliff:
+   Diese Werte halten Überschrift und Text schmal genug, damit nichts
+   horizontal abgeschnitten wird. */
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+
+  .hero-text {
+    width: min(100%, calc(100vw - 3rem));
+    max-width: 18rem;
+    margin-inline: auto;
+    padding: 1.5rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(1.65rem, 7vw, 2rem);
+    overflow-wrap: break-word;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  line-height: 1.15;
+}
